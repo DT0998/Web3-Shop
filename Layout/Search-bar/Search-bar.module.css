@@ -12,11 +12,23 @@
     font-size: 1rem;
     outline: none;
     border: none;
-    width: 150px;
+    width: 120px;
     min-height: 100%;
     background-color: transparent;
 }
 
 .SearchBar_icon {
+    width: 13px;
+    height: 13px;  
+    margin-right: 5px;
     color: #007FFF;
+}
+.SearchBar_enter{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    padding: 0px 6.4px;
+    border: 1px solid rgb(224, 227, 231);
+    font-weight: 700;
 }
