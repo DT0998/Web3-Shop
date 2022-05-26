@@ -1,0 +1,73 @@
+.switches_container {
+    width: 180px;
+    padding: 0;
+    position: relative;
+    background: white;
+    line-height: 3rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  }
+  
+  /* input (radio) for toggling. hidden - use labels for clicking on */
+  .switches_container input {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /* labels for the input (radio) boxes - something to click on */
+  .label {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  
+  /* switch highlighters wrapper (sliding left / right) 
+      - need wrapper to enable the even margins around the highlight box
+  */
+  .switch_wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 0.15rem;
+    z-index: 3;
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  /* switch box highlighter */
+  .switch {
+    border-radius: 5px;
+    background: red;
+    height: 100%;
+    transition: all .5s ease-in-out;
+  }
+  
+  /* switch box labels
+      - default setup
+      - toggle afterwards based on radio:checked status 
+  */
+  .switch .switch_content {
+    width: 100%;
+    display: block;
+    color: white;
+    transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* slide the switch box from right to left */
+  .NoneToggle {
+    transform: translateX(0%);
+  }
+  
+  /* slide the switch box from left to right */
+  .Toggle {
+    transform: translateX(90px);
+  }
+  
