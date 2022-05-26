@@ -1,7 +1,6 @@
 import '../styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from '../components/Layout/layout';
 import {MetamaskProvider} from '../store';
+import Layout from '../Layout/layout';
 
 function MyApp({ Component, pageProps }) {
   

@@ -1,0 +1,8 @@
+.SlideBar_container{
+ padding: 20px;
+}
+/* logo */
+.logo{
+    min-width: 40px;
+    min-height: 40px;
+}

@@ -1,1 +1,1 @@
-export const ListNav = ["Get", "Post", "Update", "Delete", "Test","Metamask-Login","Metamask-Content"];
+export const ListNav = ["Metamask-Login","Metamask-Content"];
