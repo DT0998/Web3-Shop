@@ -1,0 +1,22 @@
+.SearchBar_container {
+    border: 1px solid rgb(224, 227, 231);
+    background-color: rgb(243, 246, 249);
+    border-radius: 10px;
+    height: 34px;
+    padding: 1px 6px 1px 8px;
+    width: 200px;
+}
+
+.SearchBar_input {
+    color: rgb(62, 80, 96);
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 150px;
+    min-height: 100%;
+    background-color: transparent;
+}
+
+.SearchBar_icon {
+    color: #007FFF;
+}
