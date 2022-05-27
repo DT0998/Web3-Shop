@@ -10,6 +10,7 @@ function SlideBar() {
         <div className={classes.Logo}>
           <Image src={Logo} alt="logo" />
         </div>
+        
       </div>
     </React.Fragment>
   );
