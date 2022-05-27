@@ -1,0 +1,7 @@
+.User_container{
+    background-color: rgb(237,239,242);
+    padding: 16px 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
