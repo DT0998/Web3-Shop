@@ -10,20 +10,25 @@ function UserSlideBar() {
       <div className={classes.User_container}>
         <Box display="flex" gap="20px">
           <User />
-          <Box display="flex" flexDirection="column" gap="10px">
-            User Name
-    
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="space-between"
+          <div className={classes.User_info}>
+          <Box
+            display="flex"
+            flexDirection="column"
+            gap="10px"
+          >
+            <Box>User Name</Box>
+            <Box display="flex" alignItems="center" flexDirection="row" 
+            justifyContent="space-between"
             >
-              <Box>User Address</Box>
+              <Box>
+                User Address
+              </Box>
               <Box>
                 <FaEthereum /> 0.05
               </Box>
             </Box>
           </Box>
+          </div>
         </Box>
       </div>
     </React.Fragment>
