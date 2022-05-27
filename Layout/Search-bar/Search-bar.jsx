@@ -8,10 +8,10 @@ function SearchBar() {
     <React.Fragment>
       <Box display="flex" alignItems="center"  >
         <div className={classes.SearchBar_container} >
-          <FaSearch className={classes.SearchBar_icon} role="button" />
+          <FaSearch className={classes.SearchBar_icon}  />
           <input placeholder="Search..." className={classes.SearchBar_input} />
           <span className={classes.SearchBar_enter}>
-             Enter
+            Enter
           </span>
         </div>
       </Box>

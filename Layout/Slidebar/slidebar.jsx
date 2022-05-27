@@ -7,9 +7,9 @@ function SlideBar() {
   return (
     <React.Fragment>
       <div className={classes.SlideBar_container}>
-          <div className={classes.Logo}>
-        <Image src={Logo} alt="logo"/>
-          </div>
+        <div className={classes.Logo}>
+          <Image src={Logo} alt="logo" />
+        </div>
       </div>
     </React.Fragment>
   );

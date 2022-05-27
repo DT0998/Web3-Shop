@@ -5,6 +5,7 @@
     height: 34px;
     padding: 1px 6px 1px 8px;
     width: 200px;
+    cursor: pointer;
 }
 
 .SearchBar_input {
@@ -15,15 +16,17 @@
     width: 120px;
     min-height: 100%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .SearchBar_icon {
     width: 13px;
-    height: 13px;  
+    height: 13px;
     margin-right: 5px;
     color: #007FFF;
 }
-.SearchBar_enter{
+
+.SearchBar_enter {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     font-size: 0.75rem;
