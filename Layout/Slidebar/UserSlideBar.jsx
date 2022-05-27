@@ -10,6 +10,7 @@ function UserSlideBar() {
       <div className={classes.User_container}>
         <Box display="flex" gap="20px">
           <User />
+          {/* user info balance and address */}
           <div className={classes.User_info}>
           <Box
             display="flex"
