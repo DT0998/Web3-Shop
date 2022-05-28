@@ -4,11 +4,13 @@ import { GiShop } from "react-icons/gi";
 import { IoIosCreate } from "react-icons/io";
 import { MdCollections, MdOutlineFavorite } from "react-icons/md";
 import { Box } from "@mui/system";
+import Link from "next/link";
 function SlideBarList() {
   return (
     <React.Fragment>
       <div className={classes.SlideBarList_container}>
         {/* nft shop */}
+        <Link href="/Explore" passHref>
         <div className={`${classes.SlideBarList_menu} ${classes.active}`}>
           <Box
             display="flex"
@@ -18,9 +20,10 @@ function SlideBarList() {
             paddingLeft="20px"
           >
             <GiShop />
-            Nft Shop
+            Explore
           </Box>
         </div>
+        </Link>
         {/* My Collections */}
         <div className={`${classes.SlideBarList_menu} `}>
           <Box
