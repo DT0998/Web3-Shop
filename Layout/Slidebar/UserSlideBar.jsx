@@ -22,10 +22,10 @@ function UserSlideBar() {
                   justifyContent="space-between"
                 >
                   <Box>User Address</Box>
-                  <Box>
-                    <FaEthereum /> 0.05
-                  </Box>
                 </Box>
+                  {/* <Box>
+                    <FaEthereum /> 1000000
+                  </Box> */}
               </Box>
             </div>
           </Box>
