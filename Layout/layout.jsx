@@ -11,10 +11,10 @@ function Layout({ children }) {
   return (
     <React.Fragment>
       <Grid container>
-        <Grid item xs={3}>
+        <Grid item xs={2}>
           <SlideBar />
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={10}>
           <div className={classes.MenuRight_container}>
             <Box
               display="flex"
