@@ -5,7 +5,7 @@ import SlideBar from "./Slidebar/SlideBar";
 import classes from "./Layout.module.css";
 import User from "./User/User";
 import { Box } from "@mui/system";
-import UserSlideBar from "./Slidebar/UserSlideBar";
+
 function Layout({ children }) {
   return (
     <React.Fragment>
@@ -21,7 +21,7 @@ function Layout({ children }) {
               alignItems="center"
             >
               <SearchBar />
-              <User type="notification" />
+              <User type="UserIconNav" />
             </Box>
           </div>
           <main>{children}</main>
