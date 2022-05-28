@@ -3,6 +3,7 @@ import classes from "./SlideBar.module.css";
 import Logo from "../../assets/image/logo.png";
 import Image from "next/image";
 import UserSlideBar from "./UserSlideBar";
+import SlideBarList from "./SlideBarList";
 
 function SlideBar() {
   return (
@@ -11,7 +12,8 @@ function SlideBar() {
         <div className={classes.Logo}>
           <Image src={Logo} alt="logo" />
         </div>
-      <UserSlideBar/>
+        <UserSlideBar />
+        <SlideBarList/>
       </div>
     </React.Fragment>
   );

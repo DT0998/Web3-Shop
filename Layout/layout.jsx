@@ -5,6 +5,7 @@ import SlideBar from "./Slidebar/SlideBar";
 import classes from "./Layout.module.css";
 import User from "./User/User";
 import { Box } from "@mui/system";
+import Footer from "./Footer/Footer";
 
 function Layout({ children }) {
   return (
@@ -12,6 +13,7 @@ function Layout({ children }) {
       <Grid container>
         <Grid item xs={3}>
           <SlideBar />
+          <Footer/>
         </Grid>
         <Grid item xs={9}>
           <div className={classes.MenuRight_container}>

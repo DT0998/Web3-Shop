@@ -7,6 +7,7 @@ function UserSlideBar() {
   return (
     <React.Fragment>
       {/* user table slidebar */}
+      <Box display="flex" justifyContent="center">
       <div className={classes.User_container}>
         <Box display="flex" gap="20px">
           <User />
@@ -32,6 +33,7 @@ function UserSlideBar() {
           </div>
         </Box>
       </div>
+      </Box>
     </React.Fragment>
   );
 }
