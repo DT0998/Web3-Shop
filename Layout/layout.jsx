@@ -13,7 +13,6 @@ function Layout({ children }) {
       <Grid container>
         <Grid item xs={3}>
           <SlideBar />
-          <Footer/>
         </Grid>
         <Grid item xs={9}>
           <div className={classes.MenuRight_container}>
