@@ -8,6 +8,8 @@ import WalletConnectLogo from "../../assets/images/WalletOption/walletconnect-al
 import CoinbaseWalletLogo from "../../assets/images/WalletOption/walletlink-alternative.webp";
 import PhantomLogo from "../../assets/images/WalletOption/phantom.svg";
 import GlowLogo from "../../assets/images/WalletOption/glow.svg";
+import Button from "../Button/Button";
+
 
 function WalletMenu() {
   return (
@@ -98,6 +100,12 @@ function WalletMenu() {
                   backgroundColor="rgb(229, 232, 235)"
                   color="rgb(112, 122, 131)"
                 />
+              </Box>
+            </div>
+            {/* button show more */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <Button title="Show more options"/>
               </Box>
             </div>
           </div>
