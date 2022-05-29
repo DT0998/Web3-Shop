@@ -5,13 +5,12 @@ import { Box } from "@mui/system";
 function WalletOption(props) {
   return (
     <React.Fragment>
-        <div className={classes.WalletOption_container}>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Box display="flex" gap="10px">
             <div className={classes.WalletOption_img}>
               <Image src={props.srcImage} alt={props.altImage} />
             </div>
-            <span>{props.title}</span>
+            <span className={classes.WalletOption_title}>{props.title}</span>
           </Box>
           {props.type === "network" && (
             <Box>
@@ -27,7 +26,6 @@ function WalletOption(props) {
             </Box>
           )}
         </Box>
-        </div>
     </React.Fragment>
   );
 }

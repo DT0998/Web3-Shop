@@ -3,7 +3,12 @@ import classes from "./WalletMenu.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Box } from "@mui/system";
 import WalletOption from "../WalletOption/WalletOption";
-import metamaskLogo from "../../assets/images/WalletOption/metamask-alternative.png";
+import MetamaskLogo from "../../assets/images/WalletOption/metamask-alternative.png";
+import WalletConnectLogo from "../../assets/images/WalletOption/walletconnect-alternative.webp";
+import CoinbaseWalletLogo from "../../assets/images/WalletOption/walletlink-alternative.webp";
+import PhantomLogo from "../../assets/images/WalletOption/phantom.svg";
+import GlowLogo from "../../assets/images/WalletOption/glow.svg";
+
 function WalletMenu() {
   return (
     <React.Fragment>
@@ -25,19 +30,77 @@ function WalletMenu() {
             providers or create a new one.
           </Box>
           <div className={classes.WalletMenu_network}>
-          <Box padding="16px">
-            <WalletOption
-              srcImage={metamaskLogo}
-              alt="metamask"
-              title="Metamask"
-              type="network"
-              network="Popular"
-              backgroundColor="rgb(32, 129, 226)"
-              color="rgb(255, 255, 255)"
-            />
-          </Box>
+            {/* metamask */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <WalletOption
+                  srcImage={MetamaskLogo}
+                  alt="Metamask"
+                  title="Metamask"
+                  type="network"
+                  network="Available"
+                  backgroundColor="rgb(32, 129, 226)"
+                  color="rgb(255, 255, 255)"
+                />
+              </Box>
+            </div>
+            {/* coinbase wallet */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <WalletOption
+                  srcImage={CoinbaseWalletLogo}
+                  alt="Coinbase Wallet"
+                  title="Coinbase Wallet"
+                  type="network"
+                  network="Unavailable"
+                  backgroundColor="rgb(229, 232, 235)"
+                  color="rgb(112, 122, 131)"
+                />
+              </Box>
+            </div>
+            {/* wallet connect */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <WalletOption
+                  srcImage={WalletConnectLogo}
+                  alt="WalletConnect"
+                  title="WalletConnect"
+                  type="network"
+                  network="Unavailable"
+                  backgroundColor="rgb(229, 232, 235)"
+                  color="rgb(112, 122, 131)"
+                />
+              </Box>
+            </div>
+            {/* phantom */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <WalletOption
+                  srcImage={PhantomLogo}
+                  alt="Phantom"
+                  title="Phantom"
+                  type="network"
+                  network="Unavailable"
+                  backgroundColor="rgb(229, 232, 235)"
+                  color="rgb(112, 122, 131)"
+                />
+              </Box>
+            </div>
+            {/* glow */}
+            <div className={classes.WalletMenu_cursor}>
+              <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
+                <WalletOption
+                  srcImage={GlowLogo}
+                  alt="Glow"
+                  title="Glow"
+                  type="network"
+                  network="Unavailable"
+                  backgroundColor="rgb(229, 232, 235)"
+                  color="rgb(112, 122, 131)"
+                />
+              </Box>
+            </div>
           </div>
-          
         </div>
       </div>
     </React.Fragment>

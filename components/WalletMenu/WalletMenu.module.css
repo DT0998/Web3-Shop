@@ -59,3 +59,18 @@
     margin: 0 20px;
     margin-top: 20px;
 }
+.WalletMenu_cursor:first-child{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.WalletMenu_cursor{
+    cursor: not-allowed;
+}
+.WalletMenu_cursor:hover{
+    background-color: rgb(251, 253, 255);
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+.WalletMenu_cursor:hover:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
