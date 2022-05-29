@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./SlideBar.module.css";
-import Logo from "../../assets/image/logo.png";
+import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import UserSlideBar from "./UserSlideBar";
 import SlideBarList from "./SlideBarList";

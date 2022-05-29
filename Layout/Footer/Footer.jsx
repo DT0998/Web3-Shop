@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../../assets/image/logo.png";
+import Logo from "../../assets/images/logo.png";
 import classes from "./Footer.module.css";
 import { Box } from "@mui/system";
 
