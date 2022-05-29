@@ -6,6 +6,7 @@ import classes from "./Layout.module.css";
 import User from "./User/User";
 import { Box } from "@mui/system";
 import Footer from "./Footer/Footer";
+import WalletMenu from "../components/MyWallet/WalletMenu";
 
 function Layout({ children }) {
   return (
@@ -24,6 +25,7 @@ function Layout({ children }) {
               <SearchBar />
               <User type="UserIconNav" />
             </Box>
+            <WalletMenu />
           </div>
           <main>{children}</main>
         </Grid>

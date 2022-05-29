@@ -1,0 +1,44 @@
+.WalletMenu_container {
+    background-color: white;
+    width: 420px;
+    height: 100%;
+    border: 1px solid rgb(229, 232, 235);
+    border-bottom: 1px solid rgb(229, 232, 235);
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+    position: fixed;
+    top: 75px;
+    right: 0;
+    z-index: 50;
+}
+
+.WalletMenu_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(4, 17, 29);
+}
+
+.WalletMenu_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.WalletMenu_content {
+    color: steelblue;
+}
+
+.WalletMenu_option {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(112, 122, 131);
+}
+
+.WalletMenu_overlay {
+    width: 57%;
+    height: 100%;
+    position: fixed;
+    top: 75px;
+    left: 254px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
