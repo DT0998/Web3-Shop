@@ -6,6 +6,7 @@ import UserSlideBar from "./UserSlideBar";
 import SlideBarList from "./SlideBarList";
 import Footer from "../Footer/Footer";
 import Link from 'next/link'
+import Button from "../../components/Button/Button";
 function SlideBar() {
   return (
     <React.Fragment>
@@ -17,6 +18,9 @@ function SlideBar() {
         </Link>
         <UserSlideBar />
         <SlideBarList/>
+        <div className={classes.SlideBar_btn}>
+        <Button title="Connect Wallet"/>
+        </div>
         <Footer/>
       </div>
     </React.Fragment>
