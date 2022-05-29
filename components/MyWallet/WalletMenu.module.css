@@ -39,6 +39,7 @@
     height: 100%;
     position: fixed;
     top: 75px;
-    left: 254px;
+    left: 0px;
+    transform: translate(29%,0%);
     background-color: rgba(0, 0, 0, 0.15);
 }
