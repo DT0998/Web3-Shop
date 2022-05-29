@@ -3,8 +3,7 @@
     width: 420px;
     height: 100%;
     border: 1px solid rgb(229, 232, 235);
-    border-bottom: 1px solid rgb(229, 232, 235);
-    padding: 20px;
+    padding: 20px 0;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
     position: fixed;
@@ -25,13 +24,23 @@
 }
 
 .WalletMenu_content {
-    color: steelblue;
+    color: rgb(32, 129, 226);
 }
-
+.WalletMenu_line{
+    position: relative;
+    margin-top: 20px;
+}
+.WalletMenu_line::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid rgb(229, 232, 235);
+}
 .WalletMenu_option {
     font-weight: 400;
     font-size: 16px;
     color: rgb(112, 122, 131);
+    padding-top: 20px;
 }
 
 .WalletMenu_overlay {

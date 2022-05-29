@@ -6,7 +6,7 @@ import classes from "./Layout.module.css";
 import User from "./User/User";
 import { Box } from "@mui/system";
 import Footer from "./Footer/Footer";
-import WalletMenu from "../components/MyWallet/WalletMenu";
+import WalletMenu from "../components/WalletMenu/WalletMenu";
 
 function Layout({ children }) {
   return (
