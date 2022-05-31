@@ -8,7 +8,7 @@ import { Box } from "@mui/system";
 import WalletMenu from "../components/WalletMenu/WalletMenu";
 
 
-function Layout({ children }) {
+function Layout({ children },props) {
   // active menu wallet
   const [activeMenuWallet, setActiveMenuWallet] = useState(false);
   const openMenuWalletHandler = () => {
@@ -31,7 +31,7 @@ function Layout({ children }) {
               <SearchBar />
               <User type="UserIconNav" onOpen={openMenuWalletHandler} />
             </Box>
-            {activeMenuWallet && <WalletMenu />}
+           <WalletMenu open={activeMenuWallet} />
           </div>
           <main>{children}</main>
         </Grid>
