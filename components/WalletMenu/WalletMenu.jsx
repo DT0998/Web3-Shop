@@ -13,13 +13,11 @@ import Button from "../Button/Button";
 
 
 function WalletMenu({activeMenuWallet}) {
-
-
   return (
     <React.Fragment>
       {/* overlay */}
-      <div className={`${classes.WalletMenu_overlay} `}/>
-      <div className={`${classes.WalletMenu_container} ${activeMenuWallet ? classes.inActiveMenu : classes.ActiveMenu}`} >
+      <div className={`${classes.WalletMenu_overlay} ${activeMenuWallet ? "" : classes.ActiveOverlay }`}/>
+      <div className={`${classes.WalletMenu_container} ${activeMenuWallet ? "" : classes.ActiveMenu}`}>
         {/* menu */}
         <Box display="flex" gap="10px" alignItems="center" paddingLeft="20px">
           <FaUserCircle className={classes.WalletMenu_icon} />{" "}
