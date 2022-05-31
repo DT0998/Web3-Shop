@@ -1,15 +1,27 @@
 .WalletMenu_container {
+    position: fixed;
     background-color: white;
+    height: calc((100% - 0px) - 72px);
     width: 420px;
-    height: 100%;
     border: 1px solid rgb(229, 232, 235);
     padding: 20px 0;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
-    position: fixed;
     top: 75px;
-    right: 0;
+    right: 0px;
     z-index: 50;
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+    overflow: auto;
+}
+.WalletMenu_container.ActiveMenu{
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible;
+}
+.WalletMenu_container.inActiveMenu{
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+    visibility: hidden;
 }
 
 .WalletMenu_title {
@@ -44,14 +56,15 @@
 }
 
 .WalletMenu_overlay {
-    width: 57%;
+    width: 100%;
     height: 100%;
     position: fixed;
     top: 75px;
     left: 0px;
-    transform: translate(29.3%,0%);
+    transform: translate(16.7%,0%);
     background-color: rgba(0, 0, 0, 0.15);
 }
+
 .WalletMenu_network{
     border: 1px solid rgb(229, 232, 235);
     border-top-left-radius: 10px;

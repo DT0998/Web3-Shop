@@ -1,14 +1,19 @@
 import { Grid } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "./Search-bar/Search-bar";
 import SlideBar from "./Slidebar/SlideBar";
 import classes from "./Layout.module.css";
 import User from "./User/User";
 import { Box } from "@mui/system";
-import Footer from "./Footer/Footer";
 import WalletMenu from "../components/WalletMenu/WalletMenu";
 
 function Layout({ children }) {
+  // active menu wallet
+  const [activeMenuWallet, setActiveMenuWallet] = useState(false);
+  const openMenuWalletHandler = () => {
+    setActiveMenuWallet(!activeMenuWallet);
+  };
+
   return (
     <React.Fragment>
       <Grid container>
@@ -23,9 +28,12 @@ function Layout({ children }) {
               alignItems="center"
             >
               <SearchBar />
-              <User type="UserIconNav" />
+              <User type="UserIconNav" onOpen={openMenuWalletHandler} />
             </Box>
-            <WalletMenu />
+            {activeMenuWallet && (
+              <WalletMenu
+              />
+            )}
           </div>
           <main>{children}</main>
         </Grid>

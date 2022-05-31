@@ -1,4 +1,5 @@
 import React from "react";
+import {useState} from 'react'
 import classes from "./WalletMenu.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Box } from "@mui/system";
@@ -11,12 +12,14 @@ import GlowLogo from "../../assets/images/WalletOption/glow.svg";
 import Button from "../Button/Button";
 
 
-function WalletMenu() {
+function WalletMenu({activeMenuWallet}) {
+
+
   return (
     <React.Fragment>
       {/* overlay */}
-      <div className={classes.WalletMenu_overlay}></div>
-      <div className={classes.WalletMenu_container}>
+      <div className={`${classes.WalletMenu_overlay} `}/>
+      <div className={`${classes.WalletMenu_container} ${activeMenuWallet ? classes.inActiveMenu : classes.ActiveMenu}`} >
         {/* menu */}
         <Box display="flex" gap="10px" alignItems="center" paddingLeft="20px">
           <FaUserCircle className={classes.WalletMenu_icon} />{" "}
@@ -89,7 +92,7 @@ function WalletMenu() {
               </Box>
             </div>
             {/* glow */}
-            <div className={classes.WalletMenu_cursor}>
+            {/* <div className={classes.WalletMenu_cursor}>
               <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
                 <WalletOption
                   srcImage={GlowLogo}
@@ -101,7 +104,7 @@ function WalletMenu() {
                   color="rgb(112, 122, 131)"
                 />
               </Box>
-            </div>
+            </div> */}
             {/* button show more */}
             <div className={classes.WalletMenu_cursor}>
               <Box padding="16px" borderBottom="1px solid rgb(229, 232, 235)">
