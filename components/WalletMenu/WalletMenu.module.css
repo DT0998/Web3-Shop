@@ -1,3 +1,4 @@
+/* menu */
 .WalletMenu_container {
     position: fixed;
     background-color: white;
@@ -13,12 +14,13 @@
     transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
     overflow: auto;
     opacity: 0;
-    visibility:hidden;
+    visibility: hidden;
     transform: translate3d(100%, 0px, 0px);
 }
-.WalletMenu_container.ActiveMenu{
+/* active menu */
+.WalletMenu_container.ActiveMenu {
     opacity: 1;
-    visibility:visible;
+    visibility: visible;
     transform: translate3d(0px, 0px, 0px);
 }
 
@@ -36,68 +38,77 @@
 .WalletMenu_content {
     color: rgb(32, 129, 226);
 }
-.WalletMenu_line{
+
+.WalletMenu_line {
     position: relative;
     margin-top: 20px;
 }
-.WalletMenu_line::before{
+
+.WalletMenu_line::before {
     content: "";
     position: absolute;
     width: 100%;
     border-top: 1px solid rgb(229, 232, 235);
 }
+
 .WalletMenu_option {
     font-weight: 400;
     font-size: 16px;
     color: rgb(112, 122, 131);
     padding-top: 20px;
 }
-
+/* overlay */
 .WalletMenu_overlay {
     width: 100%;
     position: fixed;
     top: 75px;
     left: 0px;
-    transform: translate(16.7%,0%);
+    transform: translate(16.7%, 0%);
     background-color: rgba(0, 0, 0, 0.15);
     transition: all .5s ease-in-out 0s;
     opacity: 0;
-    height: 0;
 }
-.WalletMenu_overlay.ActiveOverlay{
+/* active overlay */
+.WalletMenu_overlay.ActiveOverlay {
     height: 100%;
     opacity: 1;
 }
 
 
-.WalletMenu_network{
+.WalletMenu_network {
     border: 1px solid rgb(229, 232, 235);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0 20px;
     margin-top: 20px;
 }
-.WalletMenu_network:last-child{
+
+.WalletMenu_network:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .WalletMenu_cursor:first-child,
-.WalletMenu_cursor:last-child{
+.WalletMenu_cursor:last-child {
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-.WalletMenu_cursor:hover:last-child{
+
+.WalletMenu_cursor:hover:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.WalletMenu_cursor{
+
+.WalletMenu_cursor {
     cursor: not-allowed;
 }
-.WalletMenu_cursor:hover{
+
+.WalletMenu_cursor:hover {
     background-color: rgb(251, 253, 255);
     box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
 }
-.WalletMenu_cursor:hover:first-child{
+
+.WalletMenu_cursor:hover:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
