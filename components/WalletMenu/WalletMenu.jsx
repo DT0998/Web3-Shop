@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import classes from "./WalletMenu.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Box } from "@mui/system";
