@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./WalletMenu.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Box } from "@mui/system";
@@ -11,6 +11,18 @@ import GlowLogo from "../../assets/images/WalletOption/glow.svg";
 import Button from "../Button/Button";
 
 function WalletMenu({ open }) {
+  // prevent scroll body when toggle menu slidebar
+  useEffect(()=>{
+   if(open){
+    document.body.style.overflow = "hidden"
+   }else{
+    document.body.style.overflow = "visible"
+   }
+  },[open])
+  const closeMenu = () =>{
+    
+  }
+
   return (
     <React.Fragment>
       {/* overlay */}

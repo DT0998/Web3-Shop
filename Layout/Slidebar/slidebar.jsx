@@ -7,7 +7,9 @@ import SlideBarList from "./SlideBarList";
 import Footer from "../Footer/Footer";
 import Link from 'next/link'
 import Button from "../../components/Button/Button";
+
 function SlideBar() {
+
   return (
     <React.Fragment>
       <div className={classes.SlideBar_container}>
