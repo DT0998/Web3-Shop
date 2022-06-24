@@ -32,8 +32,8 @@ function Layout({ children }) {
               justifyContent="space-between"
               alignItems="center"
             >
-              <SearchBar onOpen={openMenuWalletHandler}/>
-              <User type="UserIconNav" onOpen={openMenuWalletHandler} />
+              <SearchBar/>
+              <User type="UserIconNav" onOpenWallet={openMenuWalletHandler} onOpenNav={openMenuWalletHandler} />
             </Box>
            <WalletMenu open={activeMenuWallet} />
           </div>

@@ -5,3 +5,11 @@
     border-radius: 100%;
     cursor: pointer;
 }
+.bar{
+    width: 32px;
+    height: 32px;
+}
+.close{
+    width: 32px;
+    height: 32px;
+}
