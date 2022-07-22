@@ -2,28 +2,27 @@ import React from "react";
 import classes from "./SlideBar.module.css";
 import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
-import UserSlideBar from "./UserSlideBar";
-import SlideBarList from "./SlideBarList";
-import Footer from "../Footer/Footer";
-import Link from 'next/link'
-import Button from "../../components/Button/Button";
+import Link from "next/link";
+import Button from "../../components/Button";
+import UserSlideBar from "./Slidebar-User";
+import SlideBarList from "./Slidebar-List";
+import Footer from "../Footer";
 
 function SlideBar() {
-
   return (
     <React.Fragment>
       <div className={classes.SlideBar_container}>
         <Link href="/" passHref>
-        <div className={classes.Logo}>
-          <Image src={Logo} alt="logo" />
-        </div>
+          <div className={classes.Logo}>
+            <Image src={Logo} alt="logo" />
+          </div>
         </Link>
         <UserSlideBar />
-        <SlideBarList/>
+        <SlideBarList />
         <div className={classes.SlideBar_btn}>
-        <Button title="Connect Wallet"/>
+          <Button>Connect Wallet</Button>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </React.Fragment>
   );

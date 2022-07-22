@@ -1,17 +1,12 @@
-import '../styles/globals.css'
-import {MetamaskProvider} from '../store';
-import Layout from '../Layout/layout';
+import "../styles/globals.css";
+import Layout from "../layouts";
 
 function MyApp({ Component, pageProps }) {
-
-  
-  return(
-    <MetamaskProvider>
+  return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-    </MetamaskProvider>
-    ) 
+  );
 }
 
-export default MyApp
+export default MyApp;

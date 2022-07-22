@@ -1,12 +1,12 @@
 import { Grid } from "@mui/material";
 import React, { useState } from "react";
-import SearchBar from "./Search-bar/Search-bar";
-import SlideBar from "./Slidebar/SlideBar";
 import classes from "./Layout.module.css";
-import User from "./User/User";
 import { Box } from "@mui/system";
-import WalletMenu from "../components/WalletMenu/WalletMenu";
+import WalletMenu from "../components/WalletMenu";
 import useMediaQuery from "../hook/useMediaquery";
+import SlideBar from "./Slidebar";
+import SearchBar from "./Search-bar";
+import User from "./User";
 
 
 

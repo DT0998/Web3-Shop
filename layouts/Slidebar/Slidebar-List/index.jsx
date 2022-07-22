@@ -11,18 +11,18 @@ function SlideBarList() {
       <div className={classes.SlideBarList_container}>
         {/* nft shop */}
         <Link href="/Explore" passHref>
-        <div className={`${classes.SlideBarList_menu} ${classes.active}`}>
-          <Box
-            display="flex"
-            alignItems="center"
-            gap="20px"
-            height="100%"
-            paddingLeft="20px"
-          >
-            <GiShop />
-            Explore
-          </Box>
-        </div>
+          <div className={`${classes.SlideBarList_menu} ${classes.active}`}>
+            <Box
+              display="flex"
+              alignItems="center"
+              gap="20px"
+              height="100%"
+              paddingLeft="20px"
+            >
+              <GiShop />
+              Explore
+            </Box>
+          </div>
         </Link>
         {/* My Collections */}
         <div className={`${classes.SlideBarList_menu} `}>

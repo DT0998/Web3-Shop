@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import classes from "./WalletMenu.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Box } from "@mui/system";
-import WalletOption from "../WalletOption/WalletOption";
+import WalletOption from "../WalletOption";
 import MetamaskLogo from "../../assets/images/WalletOption/metamask-alternative.png";
 import WalletConnectLogo from "../../assets/images/WalletOption/walletconnect-alternative.webp";
 import CoinbaseWalletLogo from "../../assets/images/WalletOption/walletlink-alternative.webp";
 import PhantomLogo from "../../assets/images/WalletOption/phantom.svg";
 import GlowLogo from "../../assets/images/WalletOption/glow.svg";
-import Button from "../Button/Button";
+import Button from "../Button";
 
 function WalletMenu({ open }) {
   // prevent scroll body when toggle menu slidebar
