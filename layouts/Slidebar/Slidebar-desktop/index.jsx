@@ -1,12 +1,14 @@
 import React from "react";
 import classes from "./SlideBar.module.css";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../../assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../../components/Button";
-import UserSlideBar from "./Slidebar-User";
+import Button from "../../../components/Button";
+import UserSlideBar from "../Slidebar-desktop/Slidebar-User";
+import Footer from "../../Footer";
 import SlideBarList from "./Slidebar-List";
-import Footer from "../Footer";
+
+
 
 function SlideBar() {
   return (

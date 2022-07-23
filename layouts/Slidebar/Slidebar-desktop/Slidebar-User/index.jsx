@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./UserSlideBar.module.css";
 import { FaEthereum } from "react-icons/fa";
 import { Box } from "@mui/system";
-import User from "../../User";
+import User from "../../../User";
 function UserSlideBar() {
   return (
     <React.Fragment>

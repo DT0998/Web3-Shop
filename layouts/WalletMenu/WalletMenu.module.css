@@ -119,3 +119,8 @@
         left: -190px;
     }
 }
+@media (max-width:426px) {
+    .WalletMenu_container{
+        width: 100%;
+    }
+}

@@ -5,7 +5,6 @@ function Wallet() {
   return (
     <React.Fragment>
       <FaWallet className={classes.Wallet_icon} />
-      
     </React.Fragment>
   );
 }
