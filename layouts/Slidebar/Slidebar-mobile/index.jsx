@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./slidebar.module.css";
+import Button from "../../../components/Button";
 
-
-function SlideBar({open}) {
+function SlideBar({ open }) {
   return (
     <React.Fragment>
       {/* overlay */}
@@ -21,7 +21,9 @@ function SlideBar({open}) {
         open={open}
       >
         {/* menu */}
-        test
+        <div className={classes.SlideBarMenu_btn}>
+          <Button>Connect Wallet</Button>
+        </div>
       </div>
     </React.Fragment>
   );

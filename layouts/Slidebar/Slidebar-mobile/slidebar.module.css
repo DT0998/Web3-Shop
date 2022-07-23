@@ -29,6 +29,19 @@
   font-weight: 600;
   color: rgb(4, 17, 29);
 }
+.SlideBarMenu_btn {
+  border: 1px solid rgb(32, 129, 226);
+  background-color: rgb(32, 129, 226);
+  padding: 17px 24px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 280px;
+  height: 60px;
+  margin: 0 auto;
+}
 
 /* overlay */
 .SlidebarMenu_overlay {
@@ -58,8 +71,9 @@
     left: -190px;
   }
 }
-@media (max-width:426px) {
-    .SlidebarMenu_container{
-        width: 100%;
-    }
+
+@media (max-width: 426px) {
+  .SlidebarMenu_container {
+    width: 100%;
+  }
 }

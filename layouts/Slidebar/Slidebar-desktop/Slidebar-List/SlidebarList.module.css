@@ -1,13 +1,13 @@
-.SlideBarList_container{
-    margin-top: 40px;
+.SlideBarList_container {
+  margin-top: 40px;
 }
-.SlideBarList_menu{
-    height: 48px;
-    font-size: 0.875rem;
-    border-radius: 8px;
+.SlideBarList_menu {
+  height: 48px;
+  font-size: 0.875rem;
+  border-radius: 8px;
 }
-.active{
-    background-color: rgba(32, 101, 209, 0.08);
-    color: #2065D1;
-    font-weight: 700;
+.active {
+  background-color: rgba(32, 101, 209, 0.08);
+  color: #2065d1;
+  font-weight: 700;
 }

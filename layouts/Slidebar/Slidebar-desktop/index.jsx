@@ -8,8 +8,6 @@ import UserSlideBar from "../Slidebar-desktop/Slidebar-User";
 import Footer from "../../Footer";
 import SlideBarList from "./Slidebar-List";
 
-
-
 function SlideBar() {
   return (
     <React.Fragment>

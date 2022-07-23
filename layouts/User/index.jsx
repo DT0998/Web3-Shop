@@ -11,21 +11,25 @@ function User(props) {
   //  state close
   const [openNav, setOpenNav] = useState(false);
   // hook
-  const isMobile = useMediaQuery("(max-width:1024px)");
+  const isMobileS = useMediaQuery("(min-width:319px)");
+  const isMobileL = useMediaQuery("(min-width:426px)");
+  const isTablet = useMediaQuery("(max-width:1024px)");
   const openNavHandle = () => {
     setOpenNav(!openNav);
   };
   return (
     <React.Fragment>
-      <Box display="flex" alignItems="center" gap="40px">
+      <Box display="flex" alignItems="center">
         {/* {props.type === "UserIconNav" && <Notification />} */}
         <div className={classes.User_icon}></div>
-        {props.type === "UserIconNav" && (
-          <div onClick={props.onOpenWallet}>
-            <Wallet />
-          </div>
-        )}
-        {isMobile && (
+        {props.type === "UserIconNav" &&
+          isMobileL &&
+          isMobileS &&(
+            <div onClick={props.onOpenWallet} className={classes.User_icon}>
+              <Wallet />
+            </div>
+          )}
+        {isTablet && (
           <div className={classes.bar} onClick={props.onOpenNav}>
             <div onClick={openNavHandle}>
               {openNav ? (

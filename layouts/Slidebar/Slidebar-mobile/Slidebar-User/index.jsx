@@ -23,7 +23,7 @@ function UserSlideBar() {
                 >
                   <Box>User Address</Box>
                 </Box>
-                  {/* <Box>
+                {/* <Box>
                     <FaEthereum /> 1000000
                   </Box> */}
               </Box>

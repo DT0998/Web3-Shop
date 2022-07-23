@@ -1,10 +1,20 @@
-.MenuRight_container{
-    padding:  20px 0;
-    padding-right: 40px;
-    padding-left: 20px;
- 
+.MenuRight_container {
+  padding: 20px 0;
+  padding-right: 40px;
+  padding-left: 20px;
 }
-.Main_container{
-    padding-left: 20px;
+.Main_container {
+  padding-left: 20px;
 }
-
+/* logo */
+.Logo {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .MenuRight_container {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

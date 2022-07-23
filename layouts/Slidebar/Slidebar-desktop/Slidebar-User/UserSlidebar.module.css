@@ -1,12 +1,12 @@
-.User_container{
-    background-color: rgb(237,239,242);
-    padding: 16px 15px;
-    margin-top: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    width: 290px;
-    font-size: 14px;
+.User_container {
+  background-color: rgb(237, 239, 242);
+  padding: 16px 15px;
+  margin-top: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 290px;
+  font-size: 14px;
 }
-.User_info{
-    width: 100%;
+.User_info {
+  width: 100%;
 }
